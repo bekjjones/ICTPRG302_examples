@@ -11,19 +11,20 @@ def main():
     
     * extracting the path component from a full file specification
     * copying a file
-    * copying a directory.
+    * copying a directory
     
     """
     try:
         dateTimeStamp = datetime.now().strftime("%Y%m%d-%H%M%S")  
         
-        srcFile = "/home/ec2-user/environment/ictprg302-2023S1/file1.txt"
-        srcDir = "/home/ec2-user/environment/ictprg302-2023S1/dir1"
+        srcFile = "test.txt"
+        srcDir = "Test_Folder"
         
-        srcLoc = srcFile # change this srcLoc = srcDir to test copying a directory
+        # change this srcLoc = srcDir to test copying a directory
+        srcLoc = srcFile
         srcPath = pathlib.PurePath(srcLoc)
         
-        dstDir = "/home/ec2-user/environment/ictprg302-2023S1/backups"
+        dstDir = "backups"
         dstLoc = dstDir + "/" + srcPath.name + "-" + dateTimeStamp
         
         print("Date time stamp is " + dateTimeStamp) 

@@ -10,7 +10,7 @@ This Python code demonstrates the following features:
 import smtplib
 
 smtp = {"sender": "davidcgcleary@gmail.com",    # elasticemail.com verified sender
-        "recipient": "dcleary@sunitafe.edu.au", # elasticemail.com verified recipient
+        "recipient": "randerson@sunitafe.edu.au", # elasticemail.com verified recipient
         "server": "smtp.elasticemail.com",      # elasticemail.com SMTP server
         "port": 2525,                           # elasticemail.com SMTP port
         "user": "davidcgcleary@gmail.com",      # elasticemail.com user
@@ -30,6 +30,9 @@ def sendEmail(message):
         smtp_server.login(smtp["user"], smtp["password"])
         smtp_server.sendmail(smtp["sender"], smtp["recipient"], email)
         smtp_server.close()
+
+        print("SUCCESS: Email sent.")
+
     except Exception as e:
         print("ERROR: An error occurred.")
 

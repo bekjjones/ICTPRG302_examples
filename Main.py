@@ -14,13 +14,18 @@ def main():
     * concatentation of items into a string
     * conversion between integers and strings using the int() and str() functions, respectively.
 
+    Find out more:
+     - https://www.w3schools.com/python/module_math.asp
+     - https://www.w3schools.com/python/ref_math_pow.asp
+
     """
     try:
         number = int(input("Enter a number: "))
         
         for n in range(1, number + 1):
             print("The number is " + str(n) + ", its square is " + str(int(math.pow(n , 2))) + " and its cube is " + str(int(math.pow(n, 3))) + ".")
-	sys.exit(0)
+            
+        sys.exit(0)
             
     except ValueError:
         print("ERROR: The value entered must be an integer.")

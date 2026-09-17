@@ -8,15 +8,17 @@ def main():
     
     """
     try:
-        file = open("dir1/file1.txt", "a")
+        file = open("Test_Folder/log.txt", "a")
         
         file.write("FAILURE unknown job.\n")
         file.write("FAILURE source file did not exist.\n")
         file.write("SUCCESS backup completed.\n")
         
         file.close()
+
     except FileNotFoundError:
         print("ERROR: File does not exist.")
+
     except IOError:
         print("ERROR: File is not accessible.")
     
