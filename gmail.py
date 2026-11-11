@@ -5,7 +5,7 @@ This Python code demonstrates the following features:
 
 * send an email using the gmail smtp server.
 
-Update: 11/11/2026 RAnderson - change server and port
+Update: 11/11/2026 RAnderson - change server and port from elasticmail
 
 """
 
