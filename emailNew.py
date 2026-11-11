@@ -24,7 +24,7 @@ def send_email(message):
     "password":  "phqc kkks qxst dzix"}
 
     # Create the email message with the recipient, sender, subject, and body.
-    email = 'To: ' + smtp["recipient"] + '\n' + 'From: ' + smtp["sender"] + '\n' + 'Subject: \n\n' + message + '\n'
+    email = 'To: ' + smtp["recipient"] + '\n' + 'From: ' + smtp["sender"] + '\n' + 'Subject: Test Email \n\n' + message + '\n'
     
     try:
         # Connect to the email server and send the notification.
