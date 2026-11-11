@@ -17,7 +17,7 @@ def send_email(message):
 
     # Store the email server and account details.
     smtp = {"sender":    "bek.j.jones@gmail.com",
-    "recipient": "bek.j.jones@gmail.com",
+    "recipient": "randerson@sunitafe.edu.au",
     "server":    "smtp.gmail.com",
     "port":      587,
     "user":      "bek.j.jones@gmail.com",
